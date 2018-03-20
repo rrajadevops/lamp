@@ -19,6 +19,6 @@ RUN chown -R apache:apache /var/www/html/
 RUN chmod -R 775 /var/www/
 EXPOSE 80
 EXPOSE 443
-#CMD systemctl start httpd.service
-#ENTRYPOINT systemctl start httpd.service
+##CMD systemctl start httpd.service
+##ENTRYPOINT systemctl start httpd.service
 CMD exec httpd -DFOREGROUND
